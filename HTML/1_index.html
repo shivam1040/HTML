@@ -1,0 +1,99 @@
+<!DOCTYPE html>  <!--index.html is the first page which is generally opened first-->
+<html lang="en"> <!--root of page-->
+<head> <!--page metadata-predefined info-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon"> <!--SETS mini icon for the page-->
+    <title>Document</title> <!--Title of page-->
+</head>
+<body>
+    <header> <!---header main etc tags are neccesary for SEO, often contains nav tag-->
+    <h1>Heading</h1> <!--a tag can have more tags or plain text, h1 h2 h3 defines the importance of headings from 1 being most imp-->
+    <ul type="square"> <!--Way to created bulleted unordered list-->
+        <li>Home</li>
+    </ul>
+    <ol type="1"> <!--Way to created bulleted ordered list, and prints in numerical order-->
+        <li>Home</li>
+    </ol>
+</header>
+    <main>
+    <p>Para</p>
+    
+    <a href="https://google.com" target="_main">To go to google
+        <img src="image.jpg" alt="Err" width="120px">
+    </a> <!---attribute with anchor tag and _main ensures that link is opened in new tab when image is clicked-->
+    
+    <br> <!---empty tag-->
+    <section>
+    <a href="/about.html">About</a>
+    <img src="image.jpg" alt="Err" width="120px"> <!---loads image at 120px while maintaining aspect ratio else display alt text, this method is relative url calling-->
+    </section>
+    <b>Bold</b>
+    <i>italic</i>
+    <u>underline</u>
+    <big>this</big> <!---text in big-->
+    <hr> <!---horizontal line-->
+    <small>small</small> <!---text in small-->
+    <p>CO <sub>2</sub> </p> <!---subscript text 2-->
+    <p>C &rarr; O <sup>2</sup> </p> <!---superscript text 2, @rarr is special symbol there are many-->
+    <pre>tewte
+        jygjgt jrffr
+    </pre> <!---prints the content as it is-->
+
+    <section> <!--Page section, Section is to separate the block for SEo-->
+        <div> <!--block element, div takes more than required area and no other content can be placed in its line, container for elements and displays as a block, divides the elements for easy styling-->
+            <h1>Div</h1>
+            <p>Div Para</p>
+        </div>
+        <!--Articel is tag for self contained content, Aside is tag for content aside of main, ads etc.-->
+        <span> <!--takes only required screen space, inline element-->
+            Span element
+        </span>
+
+        <div>
+            <table> <!--creates table-->
+                <thead> <!--marks the head of table-->
+                <caption>Gives cap. to table</caption>
+                <tr> <!--creates row-->
+                    <th colspan="2">SN</th> <!--creates row heading in bold and SN takes two column, to take effect nAME Heading needs to be disabled-->
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody> <!--marks the body of table-->
+                <tr> <!--next row-->
+                    <td>1</td> <!--entries of headings-->
+                    <td>Shiv</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+
+        <div>
+            <h1>Form</h1>
+            <form action="form.php"> <!--pushes the data to form.php-->
+                <input type="text" placeholder="Enter"> <!--creates a textbox with prompt enter-->
+                <label for="id1"> <!--used to highlight the text that it belongs to radio by pointing to unique id-->
+                    <input type="radio" value="A" name="Section" id="id1"> Sec A <!--button type input having value A and name Section with id as id1, names is used as identifier to retrieve data from backend/server/database-->
+                </label>
+                <input type="checkbox" name="You want?" id="id2" class="red blue">hh <!--CREates checkbox type input  with class red and blue, classes can contain multiple class name-->
+                <textarea name="expl" id="id3" cols="30" rows="10" placeholder="Why"></textarea> <!--above creates a big text box according to give column and height-->
+                <select name="car" id="car"> <!--creates drop down selectable list-->
+                    <option value="He">Select car</option>
+                    <option value="He1">He1</option>
+                </select>
+            </form>
+        </div>
+
+        <!--things can be embedded inside div using iframe, or embed links of the content you want to embed, iframe is basically used to place a mini sized version of a webpage on any webpage-->
+
+        <video src="a.mp4" controls></video> <!--tag to add video to webpage, control gives it media control-->
+
+    </section>
+
+    </main>
+    <footer>
+        foot
+    </footer>
+</body>
+</html>
